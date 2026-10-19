@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinelai"
+version = "1.0.0"
+description = "AI-powered defensive security toolkit: ML threat hunting on logs + prompt-injection defence for LLM apps."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.26", "scikit-learn>=1.4"]
+keywords = ["cybersecurity", "ai-security", "prompt-injection", "threat-hunting", "mitre-attack", "llm-security", "blue-team"]
+
+[project.scripts]
+sentinelai = "sentinelai.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sentinelai*"]

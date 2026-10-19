@@ -1,0 +1,3 @@
+"""SentinelAI - AI-powered defensive security toolkit."""
+
+__version__ = "1.0.0"
